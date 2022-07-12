@@ -1,0 +1,5 @@
+let resize = (s) {
+	a = s.split('x')
+	$.print("\u{1b}[8;{};{}t".fmt([a[0], a[1]]))
+}
+return resize
